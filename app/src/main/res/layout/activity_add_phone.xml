@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPhoneActivity"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+
+    <EditText
+        android:id="@+id/edt_phone_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:padding="20dp"
+        app:layout_constraintHeight_percent="0.1"
+        android:hint="@string/phone_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edt_features"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/edit_fon"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/edt_features"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:padding="20dp"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintTop_toBottomOf="@id/edt_phone_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_save"
+        android:hint="@string/phone_features"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_fon"
+        />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edt_features"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Add Phone"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/yellow"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        app:layout_constraintHorizontal_bias="1"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
